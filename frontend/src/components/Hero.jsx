@@ -2,7 +2,7 @@ import React from "react";
 import Desk from "../assets/images/illustration-working.svg";
 const Hero = () => {
   return (
-    <div className=" flex min-h-250 py-12">
+    <div className=" flex min-h-250 py-12 w-5/6 mx-auto">
       {/* left */}
       <div className="py-8 
         leading-5

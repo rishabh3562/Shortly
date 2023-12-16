@@ -38,7 +38,7 @@ const Shortly = () => {
 const Header = () => {
   return (
     <>
-      <header className="bg-white ">
+      <header className="bg-white w-5/6 mx-auto">
         <div className="
         mx-auto flex h-16 items-center gap-8 ">
           {/* Shortly */}

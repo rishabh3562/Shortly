@@ -22,6 +22,9 @@ export default {
           'very-dark-blue': 'hsl(255, 11%, 22%)',
           'very-dark-violet': 'hsl(260, 8%, 14%)',
         },
+        bg:{
+          gray1:'rgb(243, 243, 243)'
+        }
       },
       fontSize: {
         '18px': '18px',

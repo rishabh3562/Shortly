@@ -22,29 +22,48 @@ const Home = () => {
   return (
     <>
       {/* <div>Hero</div> */}
-      <div className="w-5/6 mx-auto">
+      <div className="  ">
+        <div className="bg-white pb-6">
+
         <Header className="absolute bottom-0" />
         <Hero />
+        </div>
 
         {/* FORM section */}
 
-        <form onSubmit={HandleSubmit} className="flex">
-          <input
-            type="text"
-            name=""
-            id=""
-            value={link}
-            onChange={HandleLink}
-            placeholder="Paste the link here"
-            className="border border-gray-400 p-2 rounded-l-md flex-1"
-          />
-
-          <button
-            type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-r-md"
+        <form
+          onSubmit={HandleSubmit}
+          className=" relative bottom-10 py-8 px-8
+          rounded-lg bg-hero-pattern
+           bg-primary-dark-violet
+           w-3/4 mx-auto
+           "
+        >
+          <div
+            className="
+            flex w-full 
+            mx-auto 
+             gap-8"
           >
-            submit
-          </button>
+            <input
+              type="text"
+              name=""
+              id=""
+              value={link}
+              onChange={HandleLink}
+              placeholder="Paste the link here"
+              className="border border-gray-400 p-2 rounded-md w-full "
+            />
+
+            <button
+              type="submit"
+              className=" min-w-fit  bg-teal-300
+            
+             px-4 py-2 rounded-md"
+            >
+              <span className="font-extrabold text-white">Shorten It!</span>
+            </button>
+          </div>
         </form>
       </div>
     </>
