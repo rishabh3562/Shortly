@@ -5,6 +5,7 @@ import bg1 from "../assets/images/bg-boost-desktop.svg";
 import bg2 from "../assets/images/bg-boost-mobile.svg";
 import bg3 from "../assets/images/bg-shorten-desktop.svg";
 import bg4 from "../assets/images/bg-shorten-mobile.svg";
+import LinkInfoTab from "../components/LinkInfoTab";
 // import bg5 from "../assets/images/bg-boost-mobile.svg"
 // import bg3 from "../assets/images/bg-boost-mobile.svg"
 // import bg4
@@ -65,6 +66,15 @@ const Home = () => {
             </button>
           </div>
         </form>
+
+<div className="-my-4">
+
+
+        <LinkInfoTab/>
+        <LinkInfoTab/>
+        <LinkInfoTab/>
+        <LinkInfoTab/>
+        <LinkInfoTab/></div>
       </div>
     </>
   );
