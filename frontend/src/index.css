@@ -6,6 +6,31 @@
   margin: 0;
   padding: 0;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.neon-glow {
+  height: 100vh; /* Adjust as needed */
+  background: linear-gradient(135deg, #f06, #9f3); /* Replace with your desired neon colors */
+  overflow: hidden;
+  position: relative;
+}
+
+.neon-glow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: inherit;
+  filter: blur(50px); /* Adjust blur radius for glow effect */
+  opacity: 0.8; /* Adjust opacity for the glow effect */
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

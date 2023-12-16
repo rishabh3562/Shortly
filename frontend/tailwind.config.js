@@ -1,5 +1,6 @@
 // tailwind.config.js
 /** @type {import('tailwindcss').Config} */
+import bg from "./src/assets/images/bg-boost-desktop.svg"
 export default {
   content: [
     "./index.html",
@@ -25,6 +26,10 @@ export default {
       fontSize: {
         '18px': '18px',
       },
+      backgroundImage: {
+        'hero-pattern': `url(./src/assets/images/bg-boost-desktop.svg)`,
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
   },
   plugins: [],
