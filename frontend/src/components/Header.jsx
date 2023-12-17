@@ -1,4 +1,5 @@
 import React from "react";
+import Shortly from "./Shortly";
 const NavLinkItems = ({ title, link }) => {
   return (
     <>
@@ -17,23 +18,7 @@ const NavLinkItems = ({ title, link }) => {
   );
 };
 
-const Shortly = () => {
-  return (
-    <>
-      <div 
-      className="flex align-middle
-       justify-center border-red-50">
-        <p
-          className="flex align-middle justify-center font-extrabold text-2xl
 
-        "
-        >
-          Shortly
-        </p>
-      </div>
-    </>
-  );
-};
 
 const Header = () => {
   return (

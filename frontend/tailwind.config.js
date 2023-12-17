@@ -1,6 +1,6 @@
 // tailwind.config.js
 /** @type {import('tailwindcss').Config} */
-import bg from "./src/assets/images/bg-boost-desktop.svg"
+// import bg from "./src/assets/images/bg-shorten-desktop.svg"
 export default {
   content: [
     "./index.html",
@@ -31,7 +31,11 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': `url(./src/assets/images/bg-boost-desktop.svg)`,
-        'footer-texture': "url('/img/footer-texture.png')",
+        'footer-texture': "url(./src/assets/images/bg-boost-desktop.svg)",
+      },
+      minHeight: {
+        'banner': '200px',
+        'footer': '500px',
       }
     },
   },

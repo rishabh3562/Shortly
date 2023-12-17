@@ -6,6 +6,8 @@ import bg2 from "../assets/images/bg-boost-mobile.svg";
 import bg3 from "../assets/images/bg-shorten-desktop.svg";
 import bg4 from "../assets/images/bg-shorten-mobile.svg";
 import LinkInfoTab from "../components/LinkInfoTab";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 // import bg5 from "../assets/images/bg-boost-mobile.svg"
 // import bg3 from "../assets/images/bg-boost-mobile.svg"
 // import bg4
@@ -25,9 +27,8 @@ const Home = () => {
       {/* <div>Hero</div> */}
       <div className="  ">
         <div className="bg-white pb-6">
-
-        <Header className="absolute bottom-0" />
-        <Hero />
+          <Header className="absolute bottom-0" />
+          <Hero />
         </div>
 
         {/* FORM section */}
@@ -67,14 +68,15 @@ const Home = () => {
           </div>
         </form>
 
-<div className="-my-4">
-
-
-        <LinkInfoTab/>
-        <LinkInfoTab/>
-        <LinkInfoTab/>
-        <LinkInfoTab/>
-        <LinkInfoTab/></div>
+        <div className="-my-4">
+          <LinkInfoTab />
+          <LinkInfoTab />
+          <LinkInfoTab />
+          <LinkInfoTab />
+          <LinkInfoTab />
+        </div>
+        <Banner/>
+        <Footer/>
       </div>
     </>
   );
