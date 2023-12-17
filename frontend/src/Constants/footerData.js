@@ -1,7 +1,7 @@
 export const footerData = {
 Topitems:[
     {
-        title:["Features"],
+        title:[{name:"Features",link:"/"}],
         items:[
             {
                 name:"Link Shortening",
@@ -18,7 +18,7 @@ Topitems:[
         ]
     },
     {
-        title:["Resources"],
+        title:[{name:"Resources",link:"/"}],
         items:[
             {
                 name:"Blog",
@@ -35,7 +35,7 @@ Topitems:[
         ]
     },
     {
-        title:["Company"],
+        title:[{name:"Resources",link:"/"}],
         items:[
             {
                 name:"About",

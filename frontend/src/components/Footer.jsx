@@ -1,112 +1,82 @@
-import React from 'react'
-import Shortly from './Shortly'
-import { footerData } from '../Constants/footerData'
+import React from 'react';
+import { footerData } from '../Constants/footerData';
+import Shortly from './Shortly';
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
+import { CgWebsite } from "react-icons/cg";
 
-const Topitem=({text,link})=>{
-  return(<>
-  
-  </>)
-}
-const ListItem=({text,link,type})=>{
-  return(
-    <> {(type===1)?(
-      <>
-      <div className="font-bold">
-    <p className="text-white 
-    
-    font-extrabold
-    ">
-   <a href={link?link:"/"}>{text}</a>   
-    </p>
-  </div>
-      </>
-      ):(
-        
-        <>
- <div className="font-bold py-0.5 hover:scale-105 transition-transform">
-    <p className="text-neutral-grayish-violet
-    
+const ListItem = ({ text, link, type }) => {
+  const className = type === 1 ? 'text-white font-extrabold' : 'text-neutral-grayish-violet';
 
-    ">
-   <a href={link?link:"/"}>{text}</a>   
-    </p>
-  </div>
-        </>
-    )}
-    
-    </>
-  )
-}
-const SocialItem=()=>{
-
-}
-
-const LinkList=({data})=>{
-  return(<>
-   <div className="">
-
-    <div className="">
-
-  <ListItem text={"Features"} type={1} link={"/"}/>
-    </div>
-<div className=" mt-4">
-<ListItem text={"Features"} link={"/"}/>
-<ListItem text={"Features"} link={"/"}/>
-<ListItem text={"Features"} link={"/"}/>
-
-</div>
-  </div>
-  
-  </>)
-}
-const Footer = () => {
   return (
-  <>
-  {/* bg */}
+    <div className="font-bold py-0.5">
+      <p className={className}>
+        <a href={link ? link : '/'}>{text}</a>
+      </p>
+    </div>
+  );
+};
 
-  <div className="
-  bg-neutral-very-dark-violet
-  min-w-full
-  min-h-fit
+const SocialItem = ({ icon, link }) => {
+  return (
+    <div className="text-white text-xl
+    hover:scale-105 transition-transform
+    
+    ">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        {icon}
+      </a>
+    </div>
+  );
+};
 
-  p-4
+const LinkList = ({ data }) => {
+  return (
+    <div className="">
+      <div className="">
+        {data.title.map((item, index) => (
+          <ListItem key={index} text={item.name} type={1} link={item.link} />
+        ))}
+      </div>
+      <div className="mt-4">
+        {data.items.map((item, index) => (
+          <ListItem key={index} text={item.name} link={item.link} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-  
-  ">
+const Footer = () => {
+  const { Topitems } = footerData;
 
+  return (
+    <div className="
+    bg-neutral-very-dark-violet 
+    min-w-full min-h-fit 
+    flex
+    justify-between
+    p-16
+    
+    ">
+      <div className="">
+        {/* Assuming Shortly component renders a logo */}
+        <Shortly mode={0} />
+      </div>
+      <div className="flex gap-28">
+        {Topitems.map((data, index) => (
+          <LinkList key={index} data={data} />
+        ))}
+        {/* Social media icons */}
+        <div className="flex gap-6">
+        <SocialItem icon={<IoLogoGithub />} link={"/github"} />
+        {/* <SocialItem icon={<IoLogoInstagram />} link={"/instagram"} /> */}
+        <SocialItem icon={<IoLogoLinkedin />} link={"/linkedin"} />
+        <SocialItem icon={<IoLogoTwitter />} link={"/twitter"} />
+        <SocialItem icon={<CgWebsite />} link={"/website"} />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-  {/* logo */}
-  <div className="">
-    <Shortly mode={0}/>
-  </div>
-
-  {/* right ka content */}
-  <div className=" flex gap-4">
-  {/* fetures */}
- 
-<LinkList data={footerData[0]}/>
-{/* <LinkList/>
-<LinkList/> */}
-
-
-  
-  {/* links */}
-  <div className="flex">
-  <ListItem text={"LINKS"} type={1} link={"/"}/>
-  <ListItem text={"LINKS"} type={1} link={"/"}/>
-  <ListItem text={"LINKS"} type={1} link={"/"}/>
-  <ListItem text={"LINKS"} type={1} link={"/"}/>
-
-
-    {/* <div className=""></div>
-    <div className=""></div>
-    <div className=""></div>
-    <div className=""></div> */}
-  </div>
-  </div>
-  </div>
-  </>
-  )
-}
-
-export default Footer
+export default Footer;

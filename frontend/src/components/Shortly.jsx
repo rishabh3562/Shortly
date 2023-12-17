@@ -12,13 +12,16 @@ const Shortly = ({mode}) => {
             className="flex 
             align-middle 
             justify-center
-             font-extrabold text-3xl
+             font-extrabold text-4xl
   text-white
 
   
           "
           >
-            Shortly
+        <a href="/">
+            
+               Shortly
+            </a> 
           </p>
           
         </div>
