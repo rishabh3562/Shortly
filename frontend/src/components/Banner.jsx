@@ -14,7 +14,6 @@ const Banner = () => {
     items-center
     bg-no-repeat
     bg-cover
-    mt-16
     '>
 
 <div className="

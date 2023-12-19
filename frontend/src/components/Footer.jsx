@@ -53,11 +53,19 @@ const Footer = () => {
     <div className="
     bg-neutral-very-dark-violet 
     min-w-full min-h-fit 
-    flex
-    justify-between
-    p-16
-    
+  
+  
     ">
+
+      {/* wrapper 2 */}
+
+      <div className=" 
+        flex
+        justify-between
+        p-16
+      w-5/6 mx-auto">
+
+     
       <div className="">
         {/* Assuming Shortly component renders a logo */}
         <Shortly mode={0} />
@@ -74,6 +82,7 @@ const Footer = () => {
         <SocialItem icon={<IoLogoTwitter />} link={"/twitter"} />
         <SocialItem icon={<CgWebsite />} link={"/website"} />
         </div>
+      </div> 
       </div>
     </div>
   );

@@ -34,8 +34,14 @@ export default {
         'footer-texture': "url(./src/assets/images/bg-boost-desktop.svg)",
       },
       minHeight: {
-        'banner': '200px',
+        'banner': '250px',
         'footer': '500px',
+        'hero': '500px',
+        'hero-mobile': '400px',
+        'hero-tablet': '500px',
+        'hero-desktop': '500px',
+        'hero-desktop-lg': '500px',
+        'hero-desktop-xl': '500px',
       }
     },
   },
