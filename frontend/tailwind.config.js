@@ -42,8 +42,16 @@ export default {
         'hero-desktop': '500px',
         'hero-desktop-lg': '500px',
         'hero-desktop-xl': '500px',
+      },
+      screens:{
+        'tablet': '640px',
+        'desktop': '1024px',
+        'desktop-lg': '1280px',
+        'desktop-xl': '1536px',
+      'xs': '320px',
+      }
       }
     },
-  },
+  
   plugins: [],
 };

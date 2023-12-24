@@ -8,6 +8,7 @@ import bg4 from "../assets/images/bg-shorten-mobile.svg";
 import LinkInfoTab from "../components/LinkInfoTab";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import FeatDesc from "../components/FeatDesc";
 // import bg5 from "../assets/images/bg-boost-mobile.svg"
 // import bg3 from "../assets/images/bg-boost-mobile.svg"
 // import bg4
@@ -35,13 +36,20 @@ const Home = () => {
           rounded-lg bg-hero-pattern
            bg-primary-dark-violet
            w-3/4 mx-auto
+            relative
+            top-20
+            md:lg:right-12
+
            "
           >
             <div
               className="
             flex w-full 
             mx-auto 
-             gap-8"
+            flex-col sm:flex-row
+            gap-4
+
+            sm:gap-8"
             >
               <input
                 type="text"
@@ -74,6 +82,7 @@ const Home = () => {
           <LinkInfoTab />
           <LinkInfoTab />
         </div> */}
+        <FeatDesc/>
         <Banner />
         <Footer />
       </div>

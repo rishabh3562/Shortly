@@ -26,7 +26,7 @@ items-center
     font-bold
     text-white
     text-3xl
-    
+    text-center
     ">
 Boost your links today
 
