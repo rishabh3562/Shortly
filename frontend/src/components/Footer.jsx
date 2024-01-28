@@ -51,7 +51,11 @@ const Footer = () => {
   return (
     <div className="bg-neutral-very-dark-violet min-w-full min-h-fit">
       {/* Grid wrapper */}
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:p-8 md:p-16 p-8 w-5/6 mx-auto">
+      <div className="grid 
+      grid-cols-1 sm:grid-cols-2 
+      gap-8  
+      sm:p-8 md:p-16 p-8 
+      w-5/6 mx-auto">
         <div className="flex mr-0 sm:mr-8 lg:pl-20 justify-center items-center sm:justify-start sm:items-start">
           {/* Assuming Shortly component renders a logo */}
           <Shortly mode={0} />
@@ -61,7 +65,11 @@ const Footer = () => {
             <LinkList key={index} data={data} />
           ))}
           {/* Social media icons */}
-          <div className="grid md:col-span-1 lg:col-span-3 xl:col-span-1 grid-cols-4 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 grid-rows-1 xs:grid-rows-2 lg:grid-rows-2 xs:gap-4 md:gap-6 lg:gap-8 xl:gap-16 min-w-fit">
+          <div className="grid 
+          md:col-span-1 lg:col-span-3 xl:col-span-1 
+          grid-cols-4 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 
+          grid-rows-1 xs:grid-rows-2 lg:grid-rows-2 
+          xs:gap-4 md:gap-6 lg:gap-8 xl:gap-16 min-w-fit">
             <SocialItem icon={<IoLogoGithub />} link="/github" grid="col-span-1" />
             <SocialItem icon={<IoLogoLinkedin />} link="/linkedin" />
             <SocialItem icon={<IoLogoTwitter />} link="/twitter" />
